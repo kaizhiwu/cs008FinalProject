@@ -4,8 +4,8 @@
     <head>
         <title>Phone's Fabulous Website</title>
         <meta charset="utf-8">
-        <meta name="author" content="Phone Htet Paing">
-        <meta name="description" content="My Thoughts About Random World Issues">
+        <meta name="author" content="Kate Paterson, Kazhi Wu, Phone Htet Paing">
+        <meta name="description" content="Mutual African Community">
 
     </head>
 
@@ -14,7 +14,7 @@
             <img alt="" src="phone-picture.jpg">
             <figcaption>Don't forget to smile!</figcaption>
         </figure>
-        <h1>Phone Htet Paing</h1>
+        <h1>Mutual African Community</h1>
         <p><a href="tryme.php">Try it you'll like it!</a></p>
         <p>Labs</p>
         <ol>
