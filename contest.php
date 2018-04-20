@@ -13,7 +13,7 @@ $totalWinners = count($joesPondWinners)
 <article class='lab3_article'>
     <h2>Last <?php print $totalWinners; ?> Winners</h2>
     <ol>
-        <?php
+        <?phpz
 // print array here with your foreach loop
         foreach ($joesPondWinners as $joesPondWinner) {
             print"<li>";
