@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Mutual African Community</title>
+        <title>Phone's Fabulous Website</title>
         <meta charset="utf-8">
         <meta name="author" content="Kate Paterson, Kazhi Wu, Phone Htet Paing">
         <meta name="description" content="Mutual African Community">
