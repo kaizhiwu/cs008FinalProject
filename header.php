@@ -1,4 +1,4 @@
-<!-- ####################  Start of the header   ############################# -->
+<!-- ####################  Start of the header ############################# -->
 <header>
     <a href="index.php" target="_blank">
         <h1>

@@ -7,7 +7,7 @@ $path_parts = pathinfo($phpSelf);
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Join us!</title>
+        <title>Mutual Africa Community</title>
 
         <meta charset="utf-8">
         <meta name="author" content="Kaizhi Wu">
