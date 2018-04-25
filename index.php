@@ -4,14 +4,8 @@ include('top.php');
 <article id="main">
     <h1>Home</h1>
     <figure class="left small">
-<<<<<<< HEAD
-        <a href="footer.php"></a>
         <img src="../images/enactus_logo.png" alt="enactus logo">
         <figcaption>Enactus</figcaption>
-=======
-        <img src="images/lab-artic-ice.png" alt="arctic ice">
-        <figcaption>National Snow and Ice Data Center</figcaption>
->>>>>>> bfeeeb2eacce8b1ba4e21887acb4ea632cd701a1
     </figure>
     <p>We the MAC are a group of refugees who came to the US almost a decade ago. Since our arrival, we have faced many different challenges: social, linguistic, professional, financial, medical, cultural differences, and more; which led us to put together our effort and strength to support each other and survive. 
 Informally, we used to meet on a regular basis for years in order to share our experiences, when we finally decided to make official our action, we got registered in 2011. 

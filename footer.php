@@ -1,5 +1,5 @@
 <!-- ######################  Start of the Footer  ########################## -->
 <footer>
-    <p>Kaizhi Wu</p>
+    <p>MutuaL African Community</p>
 </footer>
 <!-- ######################  End of the Footer  ############################ -->
