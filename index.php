@@ -4,11 +4,14 @@ include('top.php');
 <article id="main">
     <h1>Home</h1>
     <figure class="left small">
-        <img src="../images/lab-artic-ice.png" alt="arctic ice">
-        <figcaption>National Snow and Ice Data Center</figcaption>
+        <a href="footer.php"></a>
+        <img src="../images/enactus_logo.png" alt="enactus logo">
+        <figcaption>Enactus</figcaption>
     </figure>
-    <p>Released at the UN's latest report: in the coming decades human-induced climatechange will lead to water shortages, crop species extinction and disastrous consequences, and developing countries, including China, may bear the heavy blow. Experts call on China to seize the opportunity of a fleeting moment and take timely measures to address and mitigate the severe challenges posed by climate change. Global climate change problem, not just in front of us waiting for, in orderto control the global climate as soon as possible, to protect our home, every one of us should act to be small, energy saving and emission reductionsuch as switch to energy-saving light gun, do not drive private cars, the use of clean energy, energy saving car, give up paper letters, conveniently close to save electricity, buy local products, rely on new energy such as solar charging, energy-efficient appliances, donate money, etc. As long as we join hands, from around each minor matter, starts to participate to protect the environment, care for the environment, maintaining the earth's ecological balance, reduce the waste of resources, I think the disaster will be far from us, friends! Let's make a good, peaceful and civilized tomorrow. </p>
-    <p>The higher the temperature, the greater the risk in all regions of the world, the faster the temperature rises, the more serious the damage will be. Emissions do not immediately have an impact on the climate, which can exist in the atmosphere for years or decades. Since the ocean (which absorbs heat and eventually releases at a slower rate than air) appears to have a slower impact, the surface temperature will not change immediately due to greenhouse gas emissions. As a result, climate change will continue for hundreds of years after atmospheric concentrations have stabilized.</p>
+    <p>We the MAC are a group of refugees who came to the US almost a decade ago. Since our arrival, we have faced many different challenges: social, linguistic, professional, financial, medical, cultural differences, and more; which led us to put together our effort and strength to support each other and survive. 
+Informally, we used to meet on a regular basis for years in order to share our experiences, when we finally decided to make official our action, we got registered in 2011. 
+ </p>
+    <p>THIS IS ANOTHER PARAGRAPH
 </article>
 
 <aside id="other">
