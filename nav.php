@@ -6,19 +6,19 @@
         //designed to give current page a class but also allows
         //you to have more classes if you need them
            print '<li class="';
-        if ($path_parts['filename'] == "pictures") {
+        if ($path_parts['filename'] == "art") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="pictures.php">Pictures</a>';
+        print '<a href="art.php">Art</a>';
         print '</li>';
 
         print '<li class="';
-        if ($path_parts['filename'] == "services") {
+        if ($path_parts['filename'] == "contest") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="services.php">Services</a>';
+        print '<a href="contest.php">Contest</a>';
         print '</li>';
 
         print '<li class="';
@@ -35,23 +35,23 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="form.php">Contact Us</a>';
+        print '<a href="form.php">Join</a>';
         print '</li>';
         
         print '<li class="';
-        if ($path_parts['filename'] == "events") {
+        if ($path_parts['filename'] == "news") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="events.php">Events</a>';
+        print '<a href="news.php">News</a>';
         print '</li>';
 
         print '<li class="';
-        if ($path_parts['filename'] == "resources") {
+        if ($path_parts['filename'] == "weather") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="resources.php">Resources</a>';
+        print '<a href="weather.php">Weather</a>';
         print '</li>';
         ?>
     </ol>
