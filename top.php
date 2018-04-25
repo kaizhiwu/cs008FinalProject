@@ -14,7 +14,7 @@ $path_parts = pathinfo($phpSelf);
         <meta name="description" content="lab9 form">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../css/custom.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
 
         <?php
         $debug = false;

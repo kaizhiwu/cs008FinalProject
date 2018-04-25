@@ -4,7 +4,7 @@ include('top.php');
 <article id="main">
     <h1>Home</h1>
     <figure class="left small">
-        <img src="../images/enactus_logo.png" alt="enactus logo">
+        <img src="images/enactus_logo.png" alt="enactus logo">
         <figcaption>Enactus</figcaption>
     </figure>
     <p>We the MAC are a group of refugees who came to the US almost a decade ago. Since our arrival, we have faced many different challenges: social, linguistic, professional, financial, medical, cultural differences, and more; which led us to put together our effort and strength to support each other and survive. 
