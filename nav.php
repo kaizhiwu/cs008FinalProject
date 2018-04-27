@@ -6,53 +6,54 @@
         //designed to give current page a class but also allows
         //you to have more classes if you need them
            print '<li class="';
-        if ($path_parts['filename'] == "art") {
+        if ($path_parts['filename'] == "home") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="art.php">Art</a>';
+        print '<a href="home.php">Home</a>';
         print '</li>';
 
         print '<li class="';
-        if ($path_parts['filename'] == "contest") {
+        if ($path_parts['filename'] == "about") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="contest.php">Contest</a>';
+        print '<a href="about.php">About Us</a>';
         print '</li>';
 
         print '<li class="';
-        if ($path_parts['filename'] == "index") {
+        if ($path_parts['filename'] == "services") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="index.php">Home</a>';
+        print '<a href="services.php">Services</a>';
         print '</li>';
 
         /*example of repeating */
         print '<li class="';
-        if ($path_parts['filename'] == "form") {
+        if ($path_parts['filename'] == "events") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="form.php">Join</a>';
+        print '<a href="events.php">Events</a>';
         print '</li>';
         
         print '<li class="';
-        if ($path_parts['filename'] == "news") {
+        if ($path_parts['filename'] == "resources") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="news.php">News</a>';
+        print '<a href="resources.php">Resources</a>';
         print '</li>';
 
         print '<li class="';
-        if ($path_parts['filename'] == "weather") {
+        if ($path_parts['filename'] == "contact") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="weather.php">Weather</a>';
+        print '<a href="contact.php">Contact Us</a>';
         print '</li>';
         ?>
+        
     </ol>
 </nav>

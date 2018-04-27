@@ -7,11 +7,11 @@ $path_parts = pathinfo($phpSelf);
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Mutual Africa Community</title>
+        <title>Mutual African Community</title>
 
         <meta charset="utf-8">
-        <meta name="author" content="Kaizhi Wu">
-        <meta name="description" content="lab9 form">
+        <meta name="author" content="Phone Htet Paing, Kaizhi Wu, Kate Paterson">
+        <meta name="description" content="CS008 Final Project about Mutual African Community">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
