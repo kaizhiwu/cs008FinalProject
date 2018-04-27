@@ -1,0 +1,275 @@
+ul li a:link { 
+    color: black; 
+    text-decoration: none;
+}
+ul li a:hover {
+    color: navy;
+} 
+.authors {
+    text-align: center;
+    text-indent: 0em;
+}
+.danville h1 {
+    background-color: #ccccff;
+}
+
+.left {         float: left;
+                margin-left: 1em;
+
+}
+.right{
+    float: right;
+    margin-left: 1em;
+}
+.SeaIce h1 {
+    background-color: grey;
+}
+.small {
+    width: 250px;
+}
+
+a:link { 
+    color: deeppink; 
+    text-decoration: none;
+} 
+a:visited {
+    color: violet;
+} 
+a:hover {
+    color: navy; 
+    text-decoration: underline;
+} 
+a:active { 
+    color: darkcyan;
+}
+
+.fiftyPercent {
+    padding:1em;
+    width: 50%;
+    text-align: center;
+}
+
+figure {
+    border: thin solid darkslategray;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    text-align: center; 
+}
+
+figcaption {
+    color: dodgerblue;
+    font-style: italic;
+    text-align: center;
+}
+h1,h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Verdana, sans-serif;
+}
+img{
+    border-radius:0.4em;
+    max-width: 100%
+}
+nav ol li {
+    display:inline-block;
+    list-style-type:none;
+    width:12em;
+    height:3em;
+    text-align: center;
+}
+.activePage{
+    background-color: whitesmoke;
+}
+ol li {
+    background-color: beige;
+}
+
+p {
+    text-align: left;
+    text-indent: 3em;
+    line-height: 1.4em;
+    margin: 3px;
+}
+/* ====================      Lab3      ======================================*/
+body#lab3, body#contest{
+    background-color: darkgrey;
+}
+#lab3 li:nth-child(odd), #contest li:nth-child(odd) {
+    background-color: beige;
+    color: brown;
+}
+#lab3 li:nth-child(even), #contest li:nth-child(even) {
+    background-color: brown;
+    color: beige;
+}
+.lab3_article{
+    padding: 50px;
+    margin: 50px;
+    border: 5px solid grey;
+    background-color: whitesmoke;
+}
+
+.personsName {
+    text-transform: uppercase;
+}
+/* ====================      Lab4      ======================================*/
+.roundedCornersSmall {
+    border-radius: 0.4em;
+}
+#lab4 figure, #art figure{
+    border:thin solid brown;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.lab4_article{
+    text-align: center;
+}
+.animated {
+    background-color: darkgrey;
+}
+.animated figcaption {
+    background-color: lightgray;
+}
+.transparent {
+    background-color: lightgray;
+}
+.transparent figcaption {
+    background-color: darkblue;
+}
+.lab4_column {
+    -webkit-columns: 3 400px;
+    -moz-columns: 3 400px;
+    columns: 3 400px;
+}
+/* =========================== lab 5========================================= */
+table{
+    border-collapse:collapse;
+    border: 2px solid brown;
+}
+tr:nth-child(odd){
+    background-color:linen;
+}
+tr:nth-child(even){
+    background-color:lightgray;
+}
+th,td{
+    border:2px solid black;
+    padding:0.5em;
+    text-align:center;
+    width:9%;
+}
+tr:hover{
+    background:lightcyan;
+}
+.floatingHeader {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+/*****************     form section                ****************************/
+#form article{
+    font: bold 0.6em Arial,Helvetica,sans-serif;
+    max-width: 38em;
+    margin-left:auto;
+    margin-right: auto;
+}
+#frmRegister{
+    margin-left:auto;
+    margin-right: auto;
+}
+fieldset{
+    border: 4px inset beige;
+    clear: both;
+    margin-top: 2em;
+    padding: 2em;
+    background-color: lightgrey;
+}
+
+label {
+    color: cornflowerblue;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.form-heading {
+    border-bottom: 3px groove #ddd;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1.75em;
+    padding-bottom: 0.4em;
+}
+
+#form input,
+#form textarea,
+#form select{
+    box-sizing: border-box;
+    border: 2px groove #3232dc;
+    box-shadow: 2px 2px 4px #EBEBEB; 
+    border-radius: 3px;
+    padding: 1em;
+    outline: none;
+}
+
+#form input:focus,
+#form textarea:focus,
+#form select:focus{
+    border: 1px solid blueviolet;
+}
+
+#form input[type=submit]{
+    background: #005cb3 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #ccccff;
+    margin: 1em;
+    padding: 0.8em 1.4em;
+}
+
+legend{
+    display: block;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.buttons legend{
+    display: none;
+}
+/********************* main layout section *********************************/
+#index article{
+    float: left;
+    width:60%;
+    margin-right:2em;
+    padding:2em;
+}
+#other{
+    float: left;
+    width: 20%;
+    padding:2em;
+}
+.buttons legend{
+    display: none;
+}
+
+/* style the error in the form so they are visible */
+.mistake{
+    color:black;
+    background-color:green;
+    border:thin solid green;
+}
+#errors ol li{
+    color: blue;
+}
+.check-field{
+    margin: 0 0 1.25em 7.5em;
+}
+
+.radio-field{
+    margin: 0 0 1.25em 7.5em;
+}
+
+.text-field{
+    display: block;
+    float: left;
+}
