@@ -7,6 +7,7 @@ include('top.php');
         <img src="images/enactus_logo.png" alt="enactus logo">
         <figcaption>Enactus</figcaption>
     </figure>
+<<<<<<< HEAD:home.php
     <h2> Our Focus  </h2>
     <ul>
   <li>Coffee</li>
@@ -29,8 +30,11 @@ include('top.php');
     
     </p>
     
+    <p>THIS IS ANOTHER PARAGRAPH PARAGRAPH PARAGRAPH</p>
+=======
     <p>We the MAC are a group of refugees who came to the US almost a decade ago. Since our arrival, we have faced many different challenges: social, linguistic, professional, financial, medical, cultural differences, and more; which led us to put together our effort and strength to support each other and survive. Informally, we used to meet on a regular basis for years in order to share our experiences, when we finally decided to make official our action, we got registered in 2011. </p>
     <p>THIS IS ANOTHER PARAGRAPH</p>
+>>>>>>> 5c56727563a709d91ab39c24b5d0d98097fee32a:index.php
 </article>
 
 <aside id="other">
