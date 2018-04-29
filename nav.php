@@ -2,6 +2,7 @@
 <nav>
     <ol>
         <?php
+        
         print '<li class="';
         if ($path_parts['filename'] == "home") {
             print ' activePage ';
