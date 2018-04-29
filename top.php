@@ -13,10 +13,15 @@ $path_parts = pathinfo($phpSelf);
         <meta name="author" content="Phone Htet Paing, Kaizhi Wu, Kate Paterson">
         <meta name="description" content="CS008 Final Project about Mutual African Community">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
-
         <?php
+        if ($path_parts['filename'] == "about") {
+            print ' <link rel="stylesheet" type="text/css" href="css/video.css" /> ';
+            print '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>';
+            print '<script type="text/javascript" src="video.js"></script>';
+        }
+
         $debug = false;
 
         // This if statement allows us in the classroom to see what our variables are

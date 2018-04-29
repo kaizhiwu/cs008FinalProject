@@ -2,10 +2,8 @@
 <nav>
     <ol>
         <?php
-        //Repeat this if block for each menu item
-        //designed to give current page a class but also allows
-        //you to have more classes if you need them
-           print '<li class="';
+        
+        print '<li class="';
         if ($path_parts['filename'] == "home") {
             print ' activePage ';
         }
@@ -47,11 +45,11 @@
         print '</li>';
 
         print '<li class="';
-        if ($path_parts['filename'] == "contact") {
+        if ($path_parts['filename'] == "form") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="contact.php">Contact Us</a>';
+        print '<a href="form.php">Contact Us</a>';
         print '</li>';
         ?>
         
