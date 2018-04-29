@@ -14,7 +14,7 @@ $path_parts = pathinfo($phpSelf);
         <meta name="description" content="CS008 Final Project about Mutual African Community">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="style/style.css" type="text/css" media="screen">
         <?php
         if ($path_parts['filename'] == "about") {
             print ' <link rel="stylesheet" type="text/css" href="css/video.css" /> ';
