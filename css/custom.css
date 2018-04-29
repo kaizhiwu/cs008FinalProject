@@ -13,8 +13,9 @@ ul li a:hover {
     background-color: #ccccff;
 }
 
-.left {         float: left;
-                margin-left: 1em;
+.left {         
+    float: left;
+    margin-left: 1em;
 
 }
 .right{
@@ -184,6 +185,8 @@ fieldset{
     margin-top: 2em;
     padding: 2em;
     background-color: lightgrey;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 label {
@@ -194,7 +197,7 @@ label {
 
 .form-heading {
     border-bottom: 3px groove #ddd;
-    font-size: 1.25em;
+    font-size: 2.25em;
     font-style: italic;
     font-weight: bold;
     margin-bottom: 1.75em;
@@ -237,7 +240,7 @@ legend{
     display: none;
 }
 /********************* main layout section *********************************/
-#index article{
+#home article{
     float: left;
     width:60%;
     margin-right:2em;
