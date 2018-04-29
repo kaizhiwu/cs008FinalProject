@@ -4,7 +4,12 @@ include('top.php');
 <article id="main">
     <h1>Home</h1>
     <figure class="left small">
-        <img src="images/enactus_logo.png" alt="enactus logo">
+    
+
+    print <img src="../images/mac.png" alt="Mutual for African Community">
+
+
+	
         <figcaption>Enactus</figcaption>
     </figure>
     <h2> Our Focus  </h2>

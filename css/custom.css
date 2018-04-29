@@ -1,9 +1,17 @@
+/* ===================  General Section  ==================================== */
+{
+   font-size: 12pt;
+    font-family: Verdana ,Helvetica, Arial;
+    font-stretch: Condensed;
+}
+
 ul li a:link { 
     color: black; 
     text-decoration: none;
 }
+/* ===================  General Section  ==================================== */
 ul li a:hover {
-    color: navy;
+    color: #F8F097;
 } 
 .authors {
     text-align: center;
@@ -29,14 +37,14 @@ ul li a:hover {
 }
 
 a:link { 
-    color: deeppink; 
+    color: #F8F097; 
     text-decoration: none;
 } 
 a:visited {
-    color: violet;
+    color: #F8F097;
 } 
 a:hover {
-    color: navy; 
+    color: #69A96A; 
     text-decoration: underline;
 } 
 a:active { 
@@ -64,7 +72,7 @@ figcaption {
 h1,h2 {
     text-transform: uppercase;
     text-align: center;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: Verdana ,Helvetica, Arial;
 }
 img{
     border-radius:0.4em;
@@ -81,7 +89,7 @@ nav ol li {
     background-color: whitesmoke;
 }
 ol li {
-    background-color: beige;
+    background-color: #F03336;
 }
 
 p {
@@ -95,12 +103,12 @@ body#lab3, body#contest{
     background-color: darkgrey;
 }
 #lab3 li:nth-child(odd), #contest li:nth-child(odd) {
-    background-color: beige;
+    background-color: #F8F097;
     color: brown;
 }
 #lab3 li:nth-child(even), #contest li:nth-child(even) {
     background-color: brown;
-    color: beige;
+    color: #F8F097;
 }
 .lab3_article{
     padding: 50px;
@@ -142,7 +150,7 @@ body#lab3, body#contest{
     -moz-columns: 3 400px;
     columns: 3 400px;
 }
-/* =========================== lab 5========================================= */
+/* =========================== Service ========================================= */
 table{
     border-collapse:collapse;
     border: 2px solid brown;
@@ -273,3 +281,13 @@ legend{
     display: block;
     float: left;
 }
+
+/********************* Nav section *********************************/
+
+
+
+
+#resource {
+    font-family: Verdana ,Helvetica, Arial;
+}
+

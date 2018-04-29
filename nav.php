@@ -43,7 +43,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="resources.php">Resources</a>';
+        print '<a href="resource.php">Resources</a>';
         print '</li>';
 
         print '<li class="';
