@@ -268,16 +268,15 @@ legend{
     color: blue;
 }
 .check-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .radio-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .text-field{
     display: block;
-    float: left;
 }
 
 /********************* Nav section *********************************/
