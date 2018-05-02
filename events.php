@@ -48,7 +48,7 @@ fclose($file)
 ?>
 <article class='lab4_article'>
     <header>
-        <h2>images</h2>
+        <h2>Events</h2>
     </header>
     
         <table>
@@ -67,7 +67,7 @@ fclose($file)
                 print '<td>' . $allEvent[0] . '</td>';
                 print '<td>';
                 print '<a href="event-detail.php?eventName=';
-                print str_replace('','',$allEvent[1]);
+                print str_replace(' ','',$allEvent[1]);
                 print '">';
                 print $allEvent[1];
                 print '</a>';

@@ -1,10 +1,8 @@
 /* ===================  General Section  ==================================== */
-
 ul li a:link { 
     color: black; 
     text-decoration: none;
 }
-/* ===================  General Section  ==================================== */
 ul li a:hover {
     color: #F8F097;
 } 
@@ -278,12 +276,7 @@ legend{
 .text-field{
     display: block;
 }
-
 /********************* Nav section *********************************/
-
-
-
-
 #resource {
     font-family: Verdana ,Helvetica, Arial;
 }
