@@ -30,7 +30,7 @@ include ('top.php');
 	<h3>State Level Refugee Information</h3>
 	
 	<ol> 
-	    <li><a href="http://refugees.org/vermont-colchester/">US Committee for Refugees and Immigrants</a>></li>
+	    <li><a href="http://refugees.org/vermont-colchester/">US Committee for Refugees and Immigrants</a></li>
 	<p>This tells more about actions being taken in our area, and around Vermont to help and understand the Vermont Refugee Resettlement Program (VRRP).</p>
 	
 	<li><a href="http://humanservices.vermont.gov/departments/office-of-the-secretary/state-refugee-coordinator
