@@ -1,11 +1,16 @@
 <?php
 include ('top.php');
+$artName = '';
+if (isset($_GET['artName'])) {
+    $artName = htmlentities($_GET['artName'], ENT_QUOTES, "UTF-8");
+}
+
 $debug = FALSE;
 if (isset($_GET["debug"])) {
     $debug = true;
 }
-$myFolder = 'data/';
-$myFileName = 'events';
+$myFolder = '../data/';
+$myFileName = 'art';
 $fileExt = '.csv';
 $filename = $myFolder . $myFileName . $fileExt;
 if ($debug) {
@@ -34,12 +39,12 @@ if ($file) {
     }
     // read all the data
     while (!feof($file)) {
-        $allEvents[] = fgetcsv($file);
+        $allArts[] = fgetcsv($file);
     }
     if ($debug) {
         print '<p>Finished reading data. File closed.</p>';
         print '<p>My data array<p><pre> ';
-        print_r($allEvents);
+        print_r($allArts);
         print '</pre></p>';
     }
 } // ends if file was opened 
@@ -48,37 +53,21 @@ fclose($file)
 ?>
 <article class='lab4_article'>
     <header>
-        <h2>images</h2>
+        <h2>image</h2>
     </header>
-    
-        <table>
-            <?php
-            foreach ($headers as $header) {
-                print '<tr class="persist-header">';
-                print '<th>' . $header[0] . '</th>';
-                print '<th>' . $header[1] . '</th>';
-                print '<th>' . $header[2] . '</th>';
-                print '<th>' . $header[3] . '</th>';
-
-                print '</tr>' . PHP_EOL;
-            }
-            foreach ($allEvents as $allEvent) {
-                print '<tr>';
-                print '<td>' . $allEvent[0] . '</td>';
-                print '<td>';
-                print '<a href="event-detail.php?eventName=';
-                print str_replace('','',$allEvent[1]);
-                print '">';
-                print $allEvent[1];
-                print '</a>';
-                print '</td>';                
-                print '<td>' . $allEvent[2] . '</td>';
-                print '<td>' . $allEvent[3] . '</td>';
-                
-                print '</tr>' . PHP_EOL;
-            }
-            ?> 
-        </table>
+                <?php
+                foreach($allArts as $allArt){
+                    $thisAllArt= str_replace(' ','', $allArt[1]);
+                    if ($artName== $thisAllArt) {
+                    print '<figure class="roundedCornerSmall fiftyPercent">';
+                    print '<img class="roundedCornerSmall" src="../images/'. $allArt[1] .'" alt="">';
+                    print '<figcaption>';
+                    print $allArt[2];
+                    print '</figcaption>';
+                    print '</figure>' . PHP_EOL;
+                }        
+                }
+                ?> 
 </article>
 <?php
 include ('footer.php');
