@@ -1,8 +1,8 @@
 <?php
 include ('top.php');
-$artName = '';
+$eventName = '';
 if (isset($_GET['eventName'])) {
-    $artName = htmlentities($_GET['eventName'], ENT_QUOTES, "UTF-8");
+    $eventName = htmlentities($_GET['eventName'], ENT_QUOTES, "UTF-8");
 }
 
 $debug = FALSE;

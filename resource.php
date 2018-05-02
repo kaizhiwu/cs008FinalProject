@@ -1,6 +1,8 @@
 <?php
 include ('top.php');
 ?>
+<<<<<<< HEAD
+=======
 
   <body id="resource">
 <article class="persist-area">
@@ -66,6 +68,7 @@ include ('top.php');
 	</ul>
     
 =======
+>>>>>>> 8f629fafee712847816a133f5937112edd66aeca
 <body id="resource">
     <article class="persist-area">
         <h2>Resources</h2>
@@ -129,7 +132,6 @@ include ('top.php');
 
     </ul>
 
->>>>>>> a74aa0c0956ecc83f99e5205b80b3f510988ced6
 </article>
 <?php
 include ('footer.php');
