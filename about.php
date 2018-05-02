@@ -1,7 +1,6 @@
 <?php
 include ('top.php');
 ?>
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
