@@ -29,7 +29,7 @@ $thisURL = $domain . $phpSelf;
 
 $firstName = "";
 
-$email = "kwu4@uvm.edu";
+$email = "";
 
 $comments = "";
 
@@ -41,7 +41,7 @@ $kayaking = false; // not checked
 $undershirt = true;    // checked
 $underwear = false; // not checked
 
-$enviroment = true;    // checked
+$environment = true;    // checked
 $geography = false; // not checked
 
 $mountain = "Camels Hump";    // pick the option

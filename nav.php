@@ -37,7 +37,7 @@
         print '</li>';
         
         print '<li class="';
-        if ($path_parts['filename'] == "resources") {
+        if ($path_parts['filename'] == "resource") {
             print ' activePage ';
         }
         print '">';

@@ -57,6 +57,8 @@ include ('top.php');
 </div>
 =======
 
+=======
+>>>>>>> 1ce23051988c5701ad2f7cd88f85408acafa0f33
 <div id="videoMain">
     <div id="videoInterface">
         <div id="flip"> 
@@ -97,7 +99,7 @@ include ('top.php');
             <li><a href="#" onclick="playlistClick('media/vid8');"><img src="media/vid8.png" title="State Capital Montpelier" alt="State Capital Montpelier"></a></li>
         </ul>
     </div>
->>>>>>> 911b43ebec8dd1cc66dc96747aa04268d64c6ec6
 </div>
+<?php include ('footer.php'); ?>
 </body>
 </html>
