@@ -1,9 +1,5 @@
 /* ===================  General Section  ==================================== */
 
-ul li a:link { 
-    color: black; 
-    text-decoration: none;
-}
 /* ===================  General Section  ==================================== */
 ul li a:hover {
     color: #F8F097;
@@ -68,7 +64,7 @@ figcaption {
 h1,h2 {
     text-transform: uppercase;
     text-align: center;
-    font-family: Verdana ,Helvetica, Arial;
+    font-family: 'trebuchet ms' ,Helvetica, Arial;
 }
 img{
     border-radius:0.4em;
@@ -85,7 +81,7 @@ nav ol li {
     background-color: pink;
 }
 ol li {
-    background-color: navy;
+    background-color: white;
 }
 
 p {
@@ -229,7 +225,7 @@ label {
     border: medium none;
     border-radius: 3px;
     color: #ccccff;
-    margin: 1em;
+    margin: auto;
     padding: 0.8em 1.4em;
 }
 
@@ -419,10 +415,14 @@ ul#menu li a:hover
   width: 192px;}
 
 .sidebar li a.selected
-{ color: #444;} 
+{ color: none;} 
 
 .sidebar ul
 { margin: 0;} 
+
+.sidebar
+{font-family: 'trebuchet ms',Helvetica,sans-serif;
+}
 
 #content
 { text-align: left;
@@ -477,4 +477,10 @@ ul#menu li a:hover
   border-top: 1px solid #D9D5CF;
   border-bottom: 1px solid #FFF;
   margin: 0 0 20px 0;}
- 
+ #resource{
+    font-family: 'trebuchet ms',sans-serif;
+}
+ul li a:link { 
+    color: black; 
+    text-decoration: none;
+}

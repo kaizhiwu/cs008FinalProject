@@ -1,7 +1,7 @@
 <?php
 include ('top.php');
 ?>
-<<<<<<< HEAD
+
   <body id="resource">
 <article class="persist-area">
     <h2>Resources</h2>
