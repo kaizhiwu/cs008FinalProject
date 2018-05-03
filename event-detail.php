@@ -1,16 +1,16 @@
 <?php
 include ('top.php');
-$artName = '';
-if (isset($_GET['artName'])) {
-    $artName = htmlentities($_GET['artName'], ENT_QUOTES, "UTF-8");
+$eventName = '';
+if (isset($_GET['eventName'])) {
+    $eventName = htmlentities($_GET['eventName'], ENT_QUOTES, "UTF-8");
 }
 
 $debug = FALSE;
 if (isset($_GET["debug"])) {
     $debug = true;
 }
-$myFolder = '../data/';
-$myFileName = 'art';
+$myFolder = 'data/';
+$myFileName = 'events';
 $fileExt = '.csv';
 $filename = $myFolder . $myFileName . $fileExt;
 if ($debug) {
@@ -25,7 +25,6 @@ if ($debug) {
     }
 }
 //*****************    End Open A CSV File   ********************************//
-//*****************  Read Weather Data ***************************************//
 if ($file) {
     if ($debug)
         print '<p>Begin reading data into an array</p>';
@@ -39,12 +38,12 @@ if ($file) {
     }
     // read all the data
     while (!feof($file)) {
-        $allArts[] = fgetcsv($file);
+        $allEvents[] = fgetcsv($file);
     }
     if ($debug) {
         print '<p>Finished reading data. File closed.</p>';
         print '<p>My data array<p><pre> ';
-        print_r($allArts);
+        print_r($allEvents);
         print '</pre></p>';
     }
 } // ends if file was opened 
@@ -55,23 +54,22 @@ fclose($file)
     <header>
         <h2>Get involved!</h2>
     </header>
-                <?php
-                foreach($allArts as $allArt){
-                    $thisAllArt= str_replace(' ','', $allArt[1]);
-                    if ($artName== $thisAllArt) {
-                    print '<figure class="roundedCornerSmall fiftyPercent">';
-                    print '<img class="roundedCornerSmall" src="../images/'. $allArt[1] .'" alt="">';
-                    print '<figcaption>';
-                    print $allArt[2];
-                    print '</figcaption>';
-                    print '</figure>' . PHP_EOL;
-                }        
-                }
-                ?> 
+    <?php
+    foreach ($allEvents as $allEvent) {
+        $thisAllEvent = str_replace(' ', '', $allEvent[1]);
+        if ($eventName == $thisAllEvent) {
+            print '<figure class="roundedCornerSmall fiftyPercent">';
+            print '<img class="roundedCornerSmall" src="images/' . $allEvent[1] . '" alt="">';
+            print '<figcaption>';
+            print $allEvent[2];
+            print '</figcaption>';
+            print '</figure>' . PHP_EOL;
+        }
+    }
+    ?> 
 </article>
 <?php
 include ('footer.php');
 ?>
-
 </body>
 </html>

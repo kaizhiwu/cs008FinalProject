@@ -1,13 +1,4 @@
-/* ===================  General Section  ==================================== */
-
-ul li a:link { 
-    color: black; 
-    text-decoration: none;
-}
-/* ===================  General Section  ==================================== */
-ul li a:hover {
-    color: #F8F097;
-} 
+/************************* page style ************************************/
 .authors {
     text-align: center;
     text-indent: 0em;
@@ -33,20 +24,19 @@ ul li a:hover {
 }
 
 a:link { 
-    color: pink; 
+    color: #E7746F; 
     text-decoration: none;
 } 
 a:visited {
-    color: #F8F097;
+    color: #FFF;
 } 
 a:hover {
-    color: #69A96A; 
+    color: #FFF; 
     text-decoration: underline;
 } 
 a:active { 
     color: darkcyan;
 }
-
 .fiftyPercent {
     padding:1em;
     width: 50%;
@@ -68,11 +58,19 @@ figcaption {
 h1,h2 {
     text-transform: uppercase;
     text-align: center;
-    font-family: Verdana ,Helvetica, Arial;
+    font-family: 'trebuchet ms' ,Helvetica, Arial;
+}
+h2 {
+    margin-top: 2em;
+    font-size:200%; 
 }
 img{
     border-radius:0.4em;
     max-width: 100%
+}
+nav{
+    margin-top: -4.6em;
+    margin-left: -2.5em;
 }
 nav ol li {
     display:inline-block;
@@ -80,41 +78,19 @@ nav ol li {
     width:12em;
     height:3em;
     text-align: center;
+    padding-top:0.5em;
+    border-bottom: 4px solid #E7746F;
+    background-image: url("pattern.png");
 }
+
 .activePage{
     background-color: pink;
 }
-ol li {
-    background-color: navy;
-}
-
 p {
     text-align: left;
     text-indent: 3em;
     line-height: 1.4em;
     margin: 3px;
-}
-/* ====================      Lab3      ======================================*/
-body#lab3, body#contest{
-    background-color: darkgrey;
-}
-#lab3 li:nth-child(odd), #contest li:nth-child(odd) {
-    background-color: #F8F097;
-    color: brown;
-}
-#lab3 li:nth-child(even), #contest li:nth-child(even) {
-    background-color: brown;
-    color: #F8F097;
-}
-.lab3_article{
-    padding: 50px;
-    margin: 50px;
-    border: 5px solid grey;
-    background-color: whitesmoke;
-}
-
-.personsName {
-    text-transform: uppercase;
 }
 /* ====================      Lab4      ======================================*/
 .roundedCornersSmall {
@@ -181,6 +157,11 @@ tr:hover{
 #frmRegister{
     margin-left:auto;
     margin-right: auto;
+    width:50em;
+    border-bottom: 4px solid #E7746F;
+    border-top: 4px solid #E7746F;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 fieldset{
     border: 4px inset beige;
@@ -193,7 +174,7 @@ fieldset{
 }
 
 label {
-    color: cornflowerblue;
+    color:#E7746F;
     font-size: 2em;
     font-weight: bold;
 }
@@ -229,7 +210,7 @@ label {
     border: medium none;
     border-radius: 3px;
     color: #ccccff;
-    margin: 1em;
+    margin: auto;
     padding: 0.8em 1.4em;
 }
 
@@ -268,49 +249,31 @@ legend{
     color: blue;
 }
 .check-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .radio-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .text-field{
     display: block;
     float: left;
 }
-
-/********************* Nav section *********************************/
 blockquote
 { margin: 20px 0; 
   padding: 10px 20px 0 20px;
   border: 1px solid #E5E5DB;
-  background: #FFF;}
-
-.left
-{ float: left;
-  width: auto;
-  margin-right: 10px;}
-
-.right
-{ float: right; 
-  width: auto;
-  margin-left: 10px;}
-
-.center
-{ display: block;
-  text-align: center;
-  margin: 20px auto;}
-
+  background: #FFF;
+}
 #main, #logo, #menubar, #site_content, #footer
 { margin-left: auto; 
   margin-right: auto;}
 
 #header
 { background: #1d1d1d url(pattern.png) repeat;
-  border-bottom: 2px solid #E7746F;
-  height: 177px;}
-  
+  height: 244px;}
+
 #logo
 { width: 880px;
   position: relative;
@@ -345,48 +308,6 @@ blockquote
   padding: 4px 0 0 0;
   color: #FFF;}
 
-#menubar
-{ width: 880px;
-  height: 46px;} 
-
-ul#menu
-{ float: right;
-  margin: 0;}
-
-ul#menu li
-{ float: left;
-  padding: 0 0 0 9px;
-  list-style: none;
-  margin: 1px 2px 0 0;
-  background: transparent;}
-
-ul#menu li a
-{ font: normal 100% 'trebuchet ms', sans-serif;
-  display: block; 
-  float: left; 
-  height: 20px;
-  padding: 6px 35px 5px 28px;
-  text-align: center;
-  color: #FFF;
-  text-decoration: none;
-  background: transparent;} 
-
-ul#menu li.selected a
-{ height: 20px;
-  padding: 6px 35px 5px 28px;}
-
-ul#menu li.selected
-{ margin: 1px 2px 0 0;
-  background: #E7746F;}
-
-ul#menu li.selected a, ul#menu li.selected a:hover
-{ background: #E7746F;
-  color: #FFF;}
-
-ul#menu li a:hover
-{ color: #FFF;
-  background: #E7746F;}
-
 #site_content
 { width: 880px;
   overflow: hidden;
@@ -419,17 +340,21 @@ ul#menu li a:hover
   width: 192px;}
 
 .sidebar li a.selected
-{ color: #444;} 
+{ color: none;} 
 
 .sidebar ul
 { margin: 0;} 
+
+.sidebar
+{font-family: 'trebuchet ms',Helvetica,sans-serif;
+}
 
 #content
 { text-align: left;
   width: 620px;
   padding: 0 0 0 5px;
   float: left;}
-  
+
 #content ul
 { margin: 2px 0 22px 0px;}
 
@@ -462,6 +387,7 @@ ul#menu li a:hover
 #footer a:hover
 { color: #FFF;
   text-decoration: none;}
+<<<<<<< HEAD
 
 .search
 { color: #5D5D5D; 
@@ -479,3 +405,5 @@ ul#menu li a:hover
   margin: 0 0 20px 0;}
 
  
+=======
+>>>>>>> b28138020a544e195127ae38931a8fa5ebd8f1e7
