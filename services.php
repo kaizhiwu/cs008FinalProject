@@ -1,23 +1,70 @@
 <?php
 include ('top.php');
-
-$joesPondWinners = array(
-    array(2013, "<span class='personsName'>Gary Clark</span>", "Barre, VT", "4/24/13", "8:46 a.m."),
-    array(2014, "Kelsey Phillips", "Bill Brochu", "Iowa City, IA and Springfield, MA", "4/29/14", "10:06 a.m."),
-    array(2015, "Mary Numa", "West Haven CT", "4/29/15", "6:14 p.m."),
-    array(2016, "Pamela Swift", "Barre, VT", "4/12/16", "5:04 p.m."),
-    array(2017, "Emily Wiggett", "North Danville, VT,", "4/23/17", "4:32 p.m.")
-);
-$totalWinners = count($joesPondWinners)
 ?>
+<<<<<<< HEAD
 
 
 <?php
 // print out the array here with print_r just so you can see what the computer has in memory
 
+=======
+<body>
 
-include ('footer.php');
-?>
+    <h2>Services</h2>
+    <div class="clearfix">
+        <div class="container">
+            <img src="images/toyota.jpg" alt="" class="image">
+            <div class="overlay">
+                <div class="text">Help with Transportation</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="images/case.jpg" alt="" class="image">
+            <div class="overlay">
+                <div class="text">Case Management</div>
+            </div>
+        </div>
+    </div>
+>>>>>>> f108d0d6b7aacc8b0e5b8dfee8f0220c44580259
+
+    <div class="clearfix">
+        <div class="container">
+            <img src="images/translation.jpg" alt="" class="image">
+            <div class="overlay">
+                <div class="text">Translation and interpretation services</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="images/cash.jpg" alt="" class="image">
+            <div class="overlay">
+                <div class="text">Cash for emergency needs</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="container">
+            <img src="images/firstaidkit.png" alt="" class="image">
+            <div class="overlay">
+                <div class="text">First Aid kits</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="images/clothes.jpg" alt="" class="image">
+            <div class="overlay">
+                <div class="text">Donated Clothes</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <?php
+    include ('footer.php');
+    ?>
 
 </body>
 </html>

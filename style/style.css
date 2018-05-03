@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* ===================  General Section  ==================================== */
@@ -7,6 +8,9 @@ nav ul li a:hover {
     color: #F8F097;
 } 
 
+=======
+/************************* page style ************************************/
+>>>>>>> f108d0d6b7aacc8b0e5b8dfee8f0220c44580259
 .authors {
     text-align: center;
     text-indent: 0em;
@@ -68,13 +72,20 @@ h1,h2 {
     text-align: center;
     font-family: 'trebuchet ms' ,Helvetica, Arial;
 }
+<<<<<<< HEAD
 
+=======
+h2 {
+    margin-top: 2em;
+    font-size:200%; 
+}
+>>>>>>> f108d0d6b7aacc8b0e5b8dfee8f0220c44580259
 img{
     border-radius:0.4em;
     max-width: 100%
 }
 nav{
-    margin-top: -4.6em;
+    margin-top: -4.8em;
     margin-left: -2.5em;
 }
 nav ol li {
@@ -84,7 +95,6 @@ nav ol li {
     height:3em;
     text-align: center;
     padding-top:0.5em;
-    border-bottom: 4px solid #E7746F;
     background-image: url("pattern.png");
 }
 nav
@@ -94,34 +104,15 @@ nav
 .activePage{
     background-color: pink;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f108d0d6b7aacc8b0e5b8dfee8f0220c44580259
 p {
     text-align: left;
     text-indent: 3em;
     line-height: 1.4em;
     margin: 3px;
-}
-/* ====================      Lab3      ======================================*/
-body#lab3, body#contest{
-    background-color: darkgrey;
-}
-#lab3 li:nth-child(odd), #contest li:nth-child(odd) {
-    background-color: #F8F097;
-    color: brown;
-}
-#lab3 li:nth-child(even), #contest li:nth-child(even) {
-    background-color: brown;
-    color: #F8F097;
-}
-.lab3_article{
-    padding: 50px;
-    margin: 50px;
-    border: 5px solid grey;
-    background-color: whitesmoke;
-}
-
-.personsName {
-    text-transform: uppercase;
 }
 /* ====================      Lab4      ======================================*/
 .roundedCornersSmall {
@@ -188,6 +179,11 @@ tr:hover{
 #frmRegister{
     margin-left:auto;
     margin-right: auto;
+    width:50em;
+    border-bottom: 4px solid #E7746F;
+    border-top: 4px solid #E7746F;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 fieldset{
     border: 4px inset beige;
@@ -200,7 +196,7 @@ fieldset{
 }
 
 label {
-    color: cornflowerblue;
+    color:#E7746F;
     font-size: 2em;
     font-weight: bold;
 }
@@ -275,11 +271,11 @@ legend{
     color: blue;
 }
 .check-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .radio-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .text-field{
@@ -298,8 +294,10 @@ blockquote
 
 #header
 { background: #1d1d1d url(pattern.png) repeat;
-  height: 244px;}
-  
+  height: 244px;
+  border-bottom: 4px solid #E7746F;
+}
+
 #logo
 { width: 880px;
   position: relative;
@@ -380,7 +378,7 @@ blockquote
   width: 620px;
   padding: 0 0 0 5px;
   float: left;}
-  
+
 #content ul
 { margin: 2px 0 22px 0px;}
 

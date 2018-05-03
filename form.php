@@ -7,9 +7,6 @@ include 'top.php';
 // SECTION: 1a.
 // We print out the post array so that we can see our form is working.
 // if ($debug){  // later you can uncomment the if statement
-print '<p>Post Array:</p><pre>';
-print_r($_POST);
-print '</pre>';
 // }
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
@@ -31,20 +28,31 @@ $firstName = "";
 
 $email = "";
 
-$comments = "";
+$introduceSelf = "";
 
 $gender = "Female";
 
-$hiking = true;    // checked
-$kayaking = false; // not checked
+$residing = "Burlington";
 
-$undershirt = true;    // checked
-$underwear = false; // not checked
+$ageRange = "20-30";
 
-$environment = true;    // checked
-$geography = false; // not checked
+$volunteer = true;    // checked
+$service = false; // not checked
 
-$mountain = "Camels Hump";    // pick the option
+$monday = true;    // checked
+$tuesday = false; // not checked
+$wednesday = false; // not checked
+$thursday = false; // not checked
+$friday = false; // not checked
+$saturday = false; // not checked
+$sunday = false; // not checked
+
+$english = true; // checked
+$french = false; //  not checked 
+$spanish = false; //not checked
+$otherLan = false; //not checked
+        
+$services = "translation";   // pick the option
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
 // SECTION: 1d form error flags
@@ -55,20 +63,24 @@ $firstNameERROR = false;
 
 $emailERROR = false;
 
-$commentsERROR = false;
+$introduceERROR = false;
 
 $genderERROR = false;
+
+$residingERROR = false;
+
+$ageERROR = false;
 
 $activityERROR = false;
 $totalChecked = 0;
 
-$clotingERROR = false;
+$timeERROR = false;
 $totalChecked1 = 0;
 
-$classERROR = false;
+$languageERROR = false;
 $totalChecked2 = 0;
 
-$mountainError = false;
+$serviceERROR = false;
 ////%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
 // SECTION: 1e misc variables
@@ -110,62 +122,132 @@ if (isset($_POST["btnSubmit"])) {
     $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
     $dataRecord[] = $email;
 
-    $comments = htmlentities($_POST["txtComments"], ENT_QUOTES, "UTF-8");
-    $dataRecord[] = $comments;
+    $introduceSelf = htmlentities($_POST["txtComments"], ENT_QUOTES, "UTF-8");
+    $dataRecord[] = $introduceSelf;
 
     $gender = htmlentities($_POST["radGender"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $gender;
+    
+    $residing = htmlentities($_POST["radResiding"], ENT_QUOTES, "UTF-8");
+    $dataRecord[] = $residing;
+    
+    $ageRange = htmlentities($_POST["radAgeRange"], ENT_QUOTES, "UTF-8");
+    $dataRecord[] = $ageRange;
 
-    if (isset($_POST["chkHiking"])) {
-        $hiking = true;
+    if (isset($_POST["chkVolunteer"])) {
+        $volunteer = true;
         $totalChecked++;
     } else {
-        $hiking = false;
+        $volunteer = false;
     }
-    $dataRecord[] = $hiking;
+    $dataRecord[] = $volunteer;
 
-    if (isset($_POST["chkKayaking"])) {
-        $kayaking = true;
+    if (isset($_POST["chkService"])) {
+        $service = true;
         $totalChecked++;
     } else {
-        $kayaking = false;
+        $service = false;
     }
-    $dataRecord[] = $kayaking;
+    $dataRecord[] = $service;
+    
+    // @@@@@@@@@@@@@@@@@@@@@@@@  Time Available section  @@@@@@@@@@@@@@@@@@@@//
 
-    if (isset($_POST["chkUndershirt"])) {
-        $undershirt = true;
+    if (isset($_POST["chkMonday"])) {
+        $monday = true;
         $totalChecked1++;
     } else {
-        $hiking = false;
+        $monday = false;
     }
-    $dataRecord[] = $undershirt;
+    $dataRecord[] = $monday;
 
-    if (isset($_POST["chkUnderwear"])) {
-        $underwear = true;
+    if (isset($_POST["chkTuesday"])) {
+        $tuesday = true;
         $totalChecked1++;
     } else {
-        $underwear = false;
+        $tuesday = false;
     }
-    $dataRecord[] = $underwear;
+    $dataRecord[] = $tuesday;
+    
+    if (isset($_POST["chkWednesday"])) {
+        $wednesday = true;
+        $totalChecked1++;
+    } else {
+        $wednesday = false;
+    }
+    $dataRecord[] = $wednesday;
+    
+    if (isset($_POST["chkThursday"])) {
+        $thursday = true;
+        $totalChecked1++;
+    } else {
+        $thursday = false;
+    }
+    $dataRecord[] = $thursday;
+    
+    if (isset($_POST["chkFriday"])) {
+        $friday = true;
+        $totalChecked1++;
+    } else {
+        $friday = false;
+    }
+    $dataRecord[] = $friday;
+    
+    if (isset($_POST["chkSaturday"])) {
+        $saturday = true;
+        $totalChecked1++;
+    } else {
+        $saturday = false;
+    }
+    $dataRecord[] = $saturday;
+    
+    if (isset($_POST["chkSunday"])) {
+        $sunday = true;
+        $totalChecked1++;
+    } else {
+        $sunday = false;
+    }
+    $dataRecord[] = $sunday;
+    
+    //@@@@@@@@@@@@@@@@@@@@@  END OF TIME AVAILABLE SECTION @@@@@@@@@@@@@@@@@@@//
+    
+    //@@@@@@@@@@@@@@@@@@@@@  language Spoken section @@@@@@@@@@@@@@@@@@@@@@@@@//
 
-    if (isset($_POST["chkEnviroment"])) {
-        $enviroment = true;
+    if (isset($_POST["chkEnglish"])) {
+        $english = true;
         $totalChecked2++;
     } else {
-        $enviroment = false;
+        $english = false;
     }
-    $dataRecord[] = $enviroment;
+    $dataRecord[] = $english;
 
-    if (isset($_POST["chkGeography"])) {
-        $geography = true;
+    if (isset($_POST["chkFrench"])) {
+        $french = true;
         $totalChecked2++;
     } else {
-        $geography = false;
+        $french = false;
     }
-    $dataRecord[] = $geography;
+    $dataRecord[] = $french;
+    
+    if (isset($_POST["chkSpanish"])) {
+        $spanish = true;
+        $totalChecked2++;
+    } else {
+        $spanish = false;
+    }
+    $dataRecord[] = $spanish;
+    
+    if (isset($_POST["chkOtherLan"])) {
+        $otherLan = true;
+        $totalChecked2++;
+    } else {
+        $otherLan = false;
+    }
+    $dataRecord[] = $otherLan;
+    
+    //@@@@@@@@@@@@@@@@@  List of Service section @@@@@@@@@@@@@@@@@@@@@@@@@@@@//
 
-    $mountain = htmlentities($_POST["lstMountains"], ENT_QUOTES, "UTF-8");
-    $dataRecord[] = $mountain;
+    $services = htmlentities($_POST["lstServices"], ENT_QUOTES, "UTF-8");
+    $dataRecord[] = $services;
 
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     //
@@ -193,9 +275,9 @@ if (isset($_POST["btnSubmit"])) {
         $emailERROR = true;
     }
 
-    if ($comments != "") {
+    if ($introduceSelf != "") {
         if (!verifyAlphaNum($comments)) {
-            $errorMsg[] = "Your comments appear to have extra characters that are not allowed.";
+            $errorMsg[] = "Your self-introduction appears to have extra characters that are not allowed.";
             $commentsERROR = true;
         }
     }
@@ -204,6 +286,16 @@ if (isset($_POST["btnSubmit"])) {
         $errorMsg[] = "Please choose a gender";
         $genderERROR = true;
     }
+    
+    if ($residing != "Burlington" AND $residing != "Winooski" AND $residing != "Colchester" AND $residing != "None of the above") {
+        $errorMsg[] = "Please choose a city";
+        $residingERROR = true;
+    }
+    
+    if ($ageRange != "20-30" AND $ageRange != "31-40" AND $ageRange != "41-50") {
+        $errorMsg[] = "Please choose a age range";
+        $ageERROR = true;
+    }
 
     if ($totalChecked < 1) {
         $errorMsg[] = "Please choose at least one activity";
@@ -211,17 +303,17 @@ if (isset($_POST["btnSubmit"])) {
     }
 
     if ($totalChecked1 < 1) {
-        $errorMsg[] = "Please choose at least one cloth";
-        $clotingERROR = true;
+        $errorMsg[] = "Please choose at least one free day";
+        $timeERROR = true;
     }
     if ($totalChecked2 < 1) {
-        $errorMsg[] = "Please choose at least one class";
+        $errorMsg[] = "Please choose at least one language";
         $classERROR = true;
     }
 
-    if ($mountain == "") {
-        $errorMsg[] = "Please choose a favorite mountain";
-        $mountainError = true;
+    if ($services == "") {
+        $errorMsg[] = "Please choose a service";
+        $serviceERROR = true;
     }
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     //
@@ -406,18 +498,20 @@ if (isset($_POST["btnSubmit"])) {
             </fieldset> <!-- ends contact -->
 
             <fieldset class="textarea">
+                <legend>Introduce yourself</legend>
                 <p>
-                    <label  class="required" for="txtComments">Comments</label>
-                    <textarea <?php if ($commentsERROR) print 'class="mistake"'; ?>
-                        id="txtComments" 
-                        name="txtComments" 
+                    <label  class="required" for="txtIntroduction">Introduction</label>
+                    <textarea <?php if ($introduceERROR) print 'class="mistake"'; ?>
+                        id="txtIntroduction" 
+                        name="txtIntroduction" 
                         onfocus="this.select()" 
-                        tabindex="200"><?php print $comments; ?></textarea>
+                        tabindex="200"><?php print $introduceSelf; ?></textarea>
                     <!-- NOTE: no blank spaces inside the text area, be sure to close 
                             the text area directly -->
                 </p>
             </fieldset>
-
+            
+            <!-- This is for Gender -->
             <fieldset class="radio <?php if ($genderERROR) print ' mistake'; ?>">
                 <legend>What is your gender?</legend>
                 <p>
@@ -437,7 +531,7 @@ if (isset($_POST["btnSubmit"])) {
                                id="radGenderFemale" 
                                name="radGender" 
                                value="Female" 
-                               tabindex="582"
+                               tabindex="573"
                                <?php if ($gender == "Female") echo ' checked="checked" '; ?>>
                         Female</label>
                 </p>
@@ -448,11 +542,96 @@ if (isset($_POST["btnSubmit"])) {
                                id="radGenderNeutral" 
                                name="radGender" 
                                value="Neutral" 
-                               tabindex="583"
+                               tabindex="574"
                                <?php if ($gender == "Neutral") echo ' checked="checked" '; ?>>
                         Neutral</label>
                 </p>
 
+            </fieldset>
+            
+            <!-- This is for residence -->
+            <fieldset class="radio <?php if ($residingERROR) print ' mistake'; ?>">
+                <legend>Which city do you live in?</legend>
+                <p>
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="radBurlington" 
+                               name="radResiding" 
+                               value="Burlington" 
+                               tabindex="582"
+                               <?php if ($residing == "Burlington") echo ' checked="checked" '; ?>>
+                        Burlington</label>
+                </p>
+
+                <p>    
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="radWinooski" 
+                               name="radResiding" 
+                               value="Winooski" 
+                               tabindex="583"
+                               <?php if ($residing == "Winooski") echo ' checked="checked" '; ?>>
+                        Winooski</label>
+                </p>
+
+                <p>    
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="radColchester" 
+                               name="radResiding" 
+                               value="Colchester" 
+                               tabindex="584"
+                               <?php if ($residing == "Colchester") echo ' checked="checked" '; ?>>
+                        Colchester</label>
+                </p>
+                
+                <p>    
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="radNoneAbove" 
+                               name="radResiding" 
+                               value="None of the above" 
+                               tabindex="585"
+                               <?php if ($residing == "None of the above") echo ' checked="checked" '; ?>>
+                        None of the above</label>
+                </p>
+            </fieldset>
+            
+        <!-- This is for age -->
+            <fieldset class="radio <?php if ($ageERROR) print ' mistake'; ?>">
+                <legend>What is your age range?</legend>
+                <p>
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="rad20" 
+                               name="radAgeRange" 
+                               value="20-30" 
+                               tabindex="592"
+                               <?php if ($ageRange == "20-30") echo ' checked="checked" '; ?>>
+                        20-30</label>
+                </p>
+
+                <p>
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="rad30" 
+                               name="radAge" 
+                               value="31-40" 
+                               tabindex="593"
+                               <?php if ($ageRange == "31-40") echo ' checked="checked" '; ?>>
+                        31-40</label>
+                </p>
+
+                <p>
+                    <label class="radio-field">
+                        <input type="radio" 
+                               id="rad40" 
+                               name="radAge" 
+                               value="41-50" 
+                               tabindex="594"
+                               <?php if ($ageRange == "41-50") echo ' checked="checked" '; ?>>
+                        41-50</label>
+                </p>                
             </fieldset>
 
             <fieldset class="checkbox <?php if ($activityERROR) print ' mistake'; ?>">
@@ -460,87 +639,165 @@ if (isset($_POST["btnSubmit"])) {
 
                 <p>
                     <label class="check-field">
-                        <input <?php if ($hiking) print " checked "; ?>
-                            id="chkHiking"
-                            name="chkHiking"
-                            tabindex="420"
-                            type="checkbox"
-                            value="Hiking"> Hiking</label>
-                </p>
-
-                <p>
-                    <label class="check-field">
-                        <input <?php if ($kayaking) print " checked "; ?>
-                            id="chkKayaking" 
-                            name="chkKayaking" 
-                            tabindex="430"
-                            type="checkbox"
-                            value="Kayaking"> Kayaking</label>
-                </p>
-            </fieldset>
-
-            <fieldset class="checkbox <?php if ($clotingERROR) print ' mistake'; ?>">
-                <legend>Are you wearing (choose at least one and check all that apply):</legend>
-
-                <p>
-                    <label class="check-field">
-                        <input <?php if ($undershirt) print " checked "; ?>
-                            id="chkUndershirt"
-                            name="chkUndershirt"
-                            tabindex="520"
-                            type="checkbox"
-                            value="Undershirt"> Undershirt</label>
-                </p>
-
-                <p>
-                    <label class="check-field">
-                        <input <?php if ($underwear) print " checked "; ?>
-                            id="chkUnderwear" 
-                            name="chkUnderwear" 
-                            tabindex="530"
-                            type="checkbox"
-                            value="Underwear"> Underwear</label>
-                </p>
-            </fieldset>
-
-            <fieldset class="checkbox <?php if ($classERROR) print ' mistake'; ?>">
-                <legend>Have you taken (choose at least one and check all that apply):</legend>
-
-                <p>
-                    <label class="check-field">
-                        <input <?php if ($geography) print " checked "; ?>
-                            id="chkGeography"
-                            name="chkGeography"
+                        <input <?php if ($volunteer) print " checked "; ?>
+                            id="chkVolunteer"
+                            name="chkVolunteer"
                             tabindex="620"
                             type="checkbox"
-                            value="Geography"> Geography</label>
+                            value="Volunteer"> Volunteer </label>
                 </p>
 
                 <p>
                     <label class="check-field">
-                        <input <?php if ($enviroment) print " checked "; ?>
-                            id="chkEnvironment" 
-                            name="chkEnvironment" 
+                        <input <?php if ($service) print " checked "; ?>
+                            id="chkService" 
+                            name="chkService" 
                             tabindex="630"
                             type="checkbox"
-                            value="Environment"> Environment</label>
+                            value="Service"> Service </label>
+                </p>
+            </fieldset>
+            
+            <!-- checkbox for time available -->
+            <fieldset class="checkbox <?php if ($timeERROR) print ' mistake'; ?>">
+                <legend>What time are you available? (choose at least one and check all that apply):</legend>
+
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($monday) print " checked "; ?>
+                            id="chkMonday"
+                            name="chkMonday"
+                            tabindex="720"
+                            type="checkbox"
+                            value="Monday"> Monday</label>
+                </p>
+
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($tuesday) print " checked "; ?>
+                            id="chkTuesday"
+                            name="chkTuesday"
+                            tabindex="730"
+                            type="checkbox"
+                            value="Tuesday">Tuesday</label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($wednesday) print " checked "; ?>
+                            id="chkWednesday"
+                            name="chkWednesday"
+                            tabindex="740"
+                            type="checkbox"
+                            value="Wednesday"> Wednesday </label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($thursday) print " checked "; ?>
+                            id="chkThursday"
+                            name="chkThursday"
+                            tabindex="741"
+                            type="checkbox"
+                            value="Thursday"> Thursday </label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($friday) print " checked "; ?>
+                            id="chkFriday"
+                            name="chkFriday"
+                            tabindex="743"
+                            type="checkbox"
+                            value="Friday"> Friday </label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($saturday) print " checked "; ?>
+                            id="chkSaturday"
+                            name="chkSaturday"
+                            tabindex="744"
+                            type="checkbox"
+                            value="Saturday"> Saturday </label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($sunday) print " checked "; ?>
+                            id="chkSunday"
+                            name="chkSunday"
+                            tabindex="745"
+                            type="checkbox"
+                            value="Sunday"> Sunday </label>
+                </p> 
+            </fieldset>
+            
+            <!-- language spoken section -->
+            <fieldset class="checkbox <?php if ($languageERROR) print ' mistake'; ?>">
+                <legend>What language can you speak? (choose at least one and check all that apply):</legend>
+
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($english) print " checked "; ?>
+                            id="chkEnglish"
+                            name="chkEnglish"
+                            tabindex="820"
+                            type="checkbox"
+                            value="English"> English</label>
+                </p>
+
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($french) print " checked "; ?>
+                            id="chkFrench"
+                            name="chkFrench"
+                            tabindex="821"
+                            type="checkbox"
+                            value="French"> French</label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($spanish) print " checked "; ?>
+                            id="chkSpanish"
+                            name="chkSpanish"
+                            tabindex="822"
+                            type="checkbox"
+                            value="Spanish"> Spanish</label>
+                </p>
+                
+                <p>
+                    <label class="check-field">
+                        <input <?php if ($otherLan) print " checked "; ?>
+                            id="chkOtherLan"
+                            name="chkOtherLan"
+                            tabindex="823"
+                            type="checkbox"
+                            value="other languages"> Other Language </label>
                 </p>
             </fieldset>
 
-            <fieldset  class="listbox <?php if ($mountainERROR) print ' mistake'; ?>">
-                <legend>Favorite Mountain</legend>
+            <fieldset  class="listbox <?php if ($serviceERROR) print ' mistake'; ?>">
+                <legend>What service do you need?</legend>
                 <p>
-                    <select id="lstMountains" 
-                            name="lstMountains" 
-                            tabindex="520" >
-                        <option <?php if ($mountain == "HayStack Mountain") print " selected "; ?>
-                            value="HayStack Mountain">HayStack Mountain</option>
+                    <select id="lstServices" 
+                            name="lstServices" 
+                            tabindex="920" >
+                        <option <?php if ($services == "translation") print " selected "; ?>
+                            value="translation">Translation</option>
 
-                        <option <?php if ($mountain == "Camels Hump") print " selected "; ?>
-                            value="Camels Hump">Camels Hump</option>
+                        <option <?php if ($services == "transportation") print " selected "; ?>
+                            value="transportation">Transportation</option>
 
-                        <option <?php if ($mountain == "Laraway Mountain") print " selected "; ?>
-                            value="Laraway Mountain">Laraway Mountain</option>
+                        <option <?php if ($services == "case management") print " selected "; ?>
+                            value="case management">case management</option>
+                        
+                        <option <?php if ($services == "emergency cash") print " selected "; ?>
+                            value="emergency cash">emergency cash</option>
+                        
+                        <option <?php if ($services == "first aid kit") print " selected "; ?>
+                            value="first aid kit">first aid kit</option>
                     </select>
                 </p>
             </fieldset>

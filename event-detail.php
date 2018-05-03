@@ -10,7 +10,7 @@ if (isset($_GET["debug"])) {
     $debug = true;
 }
 $myFolder = 'data/';
-$myFileName = 'event';
+$myFileName = 'events';
 $fileExt = '.csv';
 $filename = $myFolder . $myFileName . $fileExt;
 if ($debug) {
@@ -52,25 +52,24 @@ fclose($file)
 ?>
 <article class='lab4_article'>
     <header>
-        <h2>image</h2>
+        <h2>Get involved!</h2>
     </header>
-                <?php
-                foreach($allEvents as $allEvent){
-                    $thisAllEvent= str_replace(' ','', $allEvent[1]);
-                    if ($eventName== $thisAllEvent) {
-                    print '<figure class="roundedCornerSmall fiftyPercent">';
-                    print '<img class="roundedCornerSmall" src="images/'. $allEvent[1] .'" alt="">';
-                    print '<figcaption>';
-                    print $allEvent[2];
-                    print '</figcaption>';
-                    print '</figure>' . PHP_EOL;
-                }        
-                }
-                ?> 
+    <?php
+    foreach ($allEvents as $allEvent) {
+        $thisAllEvent = str_replace(' ', '', $allEvent[1]);
+        if ($eventName == $thisAllEvent) {
+            print '<figure class="roundedCornerSmall fiftyPercent">';
+            print '<img class="roundedCornerSmall" src="images/' . $allEvent[1] . '" alt="">';
+            print '<figcaption>';
+            print $allEvent[2];
+            print '</figcaption>';
+            print '</figure>' . PHP_EOL;
+        }
+    }
+    ?> 
 </article>
 <?php
 include ('footer.php');
 ?>
-
 </body>
 </html>
