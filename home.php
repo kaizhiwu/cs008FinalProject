@@ -52,7 +52,7 @@
                     <!-- insert the page content here -->
                     <h1>Welcome to MAC</h1>
                     <p>Paragraph Paragraph Paragraph</p>
-                    <p>We are<strong>MAC</strong> from <strong>UVM</strong></p>
+                    <p>We are<strong>MAC</strong> from <strong> UVM</strong></p>
                     <p>Check out <a href="http://www.google.com">here</a>.</p>
                     <p>PARAGRAPH PARAGRAPH PARAGRAPH</p>
                     <h2>Note to myself</h2>

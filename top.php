@@ -21,6 +21,12 @@ $path_parts = pathinfo($phpSelf);
             print '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>';
             print '<script type="text/javascript" src="video.js"></script>';
         }
+        if ($path_parts['filename'] == "services") {
+            print ' <link rel="stylesheet" type="text/css" href="style/services_style.css" /> ';
+          
+        }
+        
+        
 
         $debug = false;
 

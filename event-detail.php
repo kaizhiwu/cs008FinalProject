@@ -53,7 +53,7 @@ fclose($file)
 ?>
 <article class='lab4_article'>
     <header>
-        <h2>image</h2>
+        <h2>Get involved!</h2>
     </header>
                 <?php
                 foreach($allArts as $allArt){
