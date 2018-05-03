@@ -1,12 +1,12 @@
-<<<<<<< HEAD
-=======
+
+
 /* ===================  General Section  ==================================== */
 
 /* ===================  General Section  ==================================== */
-ul li a:hover {
+nav ul li a:hover {
     color: #F8F097;
 } 
->>>>>>> 8f629fafee712847816a133f5937112edd66aeca
+
 .authors {
     text-align: center;
     text-indent: 0em;
@@ -35,10 +35,10 @@ a:link {
     color: #E7746F; 
     text-decoration: none;
 } 
-a:visited {
+nav a:visited {
     color: #FFF;
 } 
-a:hover {
+nav a:hover {
     color: #FFF; 
     text-decoration: underline;
 } 
@@ -68,6 +68,7 @@ h1,h2 {
     text-align: center;
     font-family: 'trebuchet ms' ,Helvetica, Arial;
 }
+
 img{
     border-radius:0.4em;
     max-width: 100%
@@ -86,17 +87,14 @@ nav ol li {
     border-bottom: 4px solid #E7746F;
     background-image: url("pattern.png");
 }
-
+nav
+{
+    font-family: 'trebuchet ms', Helvetica,sans-serif;
+}
 .activePage{
     background-color: pink;
 }
-<<<<<<< HEAD
-=======
-ol li {
-    background-color: white;
-}
 
->>>>>>> 8f629fafee712847816a133f5937112edd66aeca
 p {
     text-align: left;
     text-indent: 3em;
@@ -314,7 +312,7 @@ blockquote
   left: 0;}
 
 #logo h1, #logo h2
-{ font: normal 300% 'century gothic', arial, sans-serif;
+{ font: normal 300% 'trebuchet ms', Helvetica,sans-serif;
   border-bottom: 0;
   text-transform: none;
   margin: 0 0 0 9px;}
@@ -395,7 +393,7 @@ blockquote
 
 #footer
 { width: 100%;
-  font-family: 'trebuchet ms', sans-serif;
+  font-family: 'trebuchet ms', Helvetica,sans-serif;;
   font-size: 100%;
   height: 80px;
   padding: 28px 0 5px 0;
@@ -415,28 +413,3 @@ blockquote
 #footer a:hover
 { color: #FFF;
   text-decoration: none;}
-<<<<<<< HEAD
-=======
-
-.search
-{ color: #5D5D5D; 
-  border: 1px solid #BBB; 
-  width: 134px; 
-  padding: 4px; 
-  font: 100% arial, sans-serif;}
-
-
-.separator
-{ width: 100%;
-  height: 0;
-  border-top: 1px solid #D9D5CF;
-  border-bottom: 1px solid #FFF;
-  margin: 0 0 20px 0;}
- #resource{
-    font-family: 'trebuchet ms',sans-serif;
-}
-ul li a:link { 
-    color: black; 
-    text-decoration: none;
-}
->>>>>>> 8f629fafee712847816a133f5937112edd66aeca

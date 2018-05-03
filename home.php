@@ -56,10 +56,10 @@
                     <div class="sidebar">
                         <div class="sidebar_top"></div>
                         <div class="sidebar_item">
-                            <h3>YOOOO</h3>
+                            <h3>Current Events</h3>
                             <form method="post" action="#" id="search_form">
                                 <p>
-                                    WHAT DO YOU WANT TO PUT HERE?? PIC? CALENDER?   
+				    Check out UVM's senior Tilden Remerleitch thesis, featuring  <a href="https://itunes.apple.com/us/podcast/grounded/id1370599457?mt=2">Stories of Vermont Refugees</a>
                                 </p>
                             </form>
                         </div>
@@ -100,18 +100,20 @@ any other crisis.</li>
 conferences, workshops…. and use the collected funds to finance our charitable activities.</li>
 			<li>All members reside in Vermont so far and as of today, we have been struggling in keeping our
 mutual alive for various reasons:
-<ol><li>Many of our members moved out of state.</li>
+<ul><li>Many of our members moved out of state.</li>
     <li>Members are full time students and most of times also full time workers. Consequently,
 our ability to meet has lessened. We use to meet 3 to 4 times per month, but due to the
 reasons above, we are now down to one meeting a month.</li>
     <li>Meetings are held at the member’s place, on a rotating basis</li>
     <li>No one is getting paid nor receiving any kind of compensation for the work done.</li>
 </ol></li>
-		    </ol>
+		    </ul>
 </p>
                     
-            <?php include ('footer.php'); ?>
-
+            
+ <?php include ('footer.php'); ?>
         </div>
+		
     </body>
+   
 </html>
