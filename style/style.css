@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-=======
-/* ===================  General Section  ==================================== */
-
-/* ===================  General Section  ==================================== */
-ul li a:hover {
-    color: #F8F097;
-} 
->>>>>>> 8f629fafee712847816a133f5937112edd66aeca
+/************************* page style ************************************/
 .authors {
     text-align: center;
     text-indent: 0em;
@@ -68,6 +60,10 @@ h1,h2 {
     text-align: center;
     font-family: 'trebuchet ms' ,Helvetica, Arial;
 }
+h2 {
+    margin-top: 2em;
+    font-size:200%; 
+}
 img{
     border-radius:0.4em;
     max-width: 100%
@@ -90,40 +86,11 @@ nav ol li {
 .activePage{
     background-color: pink;
 }
-<<<<<<< HEAD
-=======
-ol li {
-    background-color: white;
-}
-
->>>>>>> 8f629fafee712847816a133f5937112edd66aeca
 p {
     text-align: left;
     text-indent: 3em;
     line-height: 1.4em;
     margin: 3px;
-}
-/* ====================      Lab3      ======================================*/
-body#lab3, body#contest{
-    background-color: darkgrey;
-}
-#lab3 li:nth-child(odd), #contest li:nth-child(odd) {
-    background-color: #F8F097;
-    color: brown;
-}
-#lab3 li:nth-child(even), #contest li:nth-child(even) {
-    background-color: brown;
-    color: #F8F097;
-}
-.lab3_article{
-    padding: 50px;
-    margin: 50px;
-    border: 5px solid grey;
-    background-color: whitesmoke;
-}
-
-.personsName {
-    text-transform: uppercase;
 }
 /* ====================      Lab4      ======================================*/
 .roundedCornersSmall {
@@ -190,6 +157,11 @@ tr:hover{
 #frmRegister{
     margin-left:auto;
     margin-right: auto;
+    width:50em;
+    border-bottom: 4px solid #E7746F;
+    border-top: 4px solid #E7746F;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 fieldset{
     border: 4px inset beige;
@@ -202,7 +174,7 @@ fieldset{
 }
 
 label {
-    color: cornflowerblue;
+    color:#E7746F;
     font-size: 2em;
     font-weight: bold;
 }
@@ -277,11 +249,11 @@ legend{
     color: blue;
 }
 .check-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .radio-field{
-    margin: 0 0 1.25em 7.5em;
+    margin: 0 0 1.25em 4.5em;
 }
 
 .text-field{
@@ -301,7 +273,7 @@ blockquote
 #header
 { background: #1d1d1d url(pattern.png) repeat;
   height: 244px;}
-  
+
 #logo
 { width: 880px;
   position: relative;
@@ -382,7 +354,7 @@ blockquote
   width: 620px;
   padding: 0 0 0 5px;
   float: left;}
-  
+
 #content ul
 { margin: 2px 0 22px 0px;}
 
@@ -415,28 +387,3 @@ blockquote
 #footer a:hover
 { color: #FFF;
   text-decoration: none;}
-<<<<<<< HEAD
-=======
-
-.search
-{ color: #5D5D5D; 
-  border: 1px solid #BBB; 
-  width: 134px; 
-  padding: 4px; 
-  font: 100% arial, sans-serif;}
-
-
-.separator
-{ width: 100%;
-  height: 0;
-  border-top: 1px solid #D9D5CF;
-  border-bottom: 1px solid #FFF;
-  margin: 0 0 20px 0;}
- #resource{
-    font-family: 'trebuchet ms',sans-serif;
-}
-ul li a:link { 
-    color: black; 
-    text-decoration: none;
-}
->>>>>>> 8f629fafee712847816a133f5937112edd66aeca
