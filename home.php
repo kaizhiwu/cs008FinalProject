@@ -84,7 +84,7 @@ include('top.php');
             </ol>
             </p>
         </div>
-        <?php include ('footer.php'); ?>
+<?php include ('footer.php'); ?>
 </body>
 
 </html>

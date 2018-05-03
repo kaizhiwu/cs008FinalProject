@@ -69,7 +69,7 @@ img{
     max-width: 100%
 }
 nav{
-    margin-top: -4.6em;
+    margin-top: -4.8em;
     margin-left: -2.5em;
 }
 nav ol li {
@@ -79,7 +79,6 @@ nav ol li {
     height:3em;
     text-align: center;
     padding-top:0.5em;
-    border-bottom: 4px solid #E7746F;
     background-image: url("pattern.png");
 }
 
@@ -272,7 +271,9 @@ blockquote
 
 #header
 { background: #1d1d1d url(pattern.png) repeat;
-  height: 244px;}
+  height: 244px;
+  border-bottom: 4px solid #E7746F;
+}
 
 #logo
 { width: 880px;
