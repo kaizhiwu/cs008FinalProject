@@ -1,7 +1,6 @@
 <?php
 include ('top.php');
 ?>
-<body>
 
     <h2>Services</h2>
     <div class="clearfix">
@@ -48,11 +47,7 @@ include ('top.php');
             </div>
         </div>
     </div>
-
-
-
-
-
+    
 
     <?php
     include ('footer.php');
