@@ -61,7 +61,6 @@ include ('top.php');
             </ol>
 
         </ul>
-
     </article>
     <?php
     include ('footer.php');
